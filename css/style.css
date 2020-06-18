@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,700,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section
+{
+    position: absolute;
+    widows: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: darkred /*#ff2562*/;
+    clip-path: polygon(54% 0, 100% 0, 100% 100%, 84% 100%);
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+section .content
+{
+    position: relative;
+    padding: 100px 50px 100px 150px;
+    box-sizing: border-box;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+
+section .content h2
+{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+section .content p
+{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+section .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: darkred /*#ff2562*/;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+section .content div:nth-child(1){
+    margin-top: 40px;
+}
+
+section .content div div h3{
+    color: #fff;
+}
+
+section .content div div{
+    overflow-y: scroll; 
+    max-height: 358px;
+}
+
+section .imgBx 
+{
+    position: relative;
+    padding-right: 100px;
+}
+
+section .imgBx img 
+{
+    max-width: 400px;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+section .imgBx .link 
+{
+    max-width: 45px;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+    float: left;
+}
+
+section .imgBx .link2
+{
+    max-width: 75px;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    margin-top: 10px;
+    float: right;
+}
+
+section .imgBx h2
+{
+    text-align: center;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.sci
+{
+    position: absolute;
+    bottom: 75px;
+    left: 150px;
+    display: flex;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+    margin-bottom: -37px;
+}
+
+.sci li 
+{
+    list-style: none;
+}
+
+.sci li a
+{
+    text-decoration: none;
+    color: #999;
+    margin-right: 30px;
+    font-size: 0.9em;
+}
+
+.sci li a:hover
+{
+    color: #fff;
+}
+
+.nav
+{
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    display: flex;
+    border-left: 5px solid darkred /*#ff2562*/;
+    padding-left: 20px;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.nav li 
+{
+    list-style: none;
+}
+
+.nav li a
+{
+    text-decoration: none;
+    color: #999;
+    margin-right: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav li a.active,
+.nav li a:hover
+{
+    color: darkred /*#ff2562*/ /*#ff2562*/;
+}
+
+
+.nav2
+{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    display: flex;
+    border-left: 5px solid darkred /*#ff2562*/;
+    padding-left: 20px;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.nav2 li 
+{
+    list-style: none;
+}
+
+.nav2 li a
+{
+    text-decoration: none;
+    color: #999;
+    margin-right: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav2 li a.active,
+.nav2 li a:hover
+{
+    color: darkred /*#ff2562*/ /*#ff2562*/;
+}
+
+
+
+.nav3
+{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    display: flex;
+    border-left: 5px solid darkred /*#ff2562*/;
+    padding-left: 20px;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.nav3 li 
+{
+    list-style: none;
+}
+
+.nav3 li a
+{
+    text-decoration: none;
+    color: #999;
+    margin-right: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav3 li a.active,
+.nav3 li a:hover
+{
+    color: darkred /*#ff2562*/ /*#ff2562*/;
+}
+
+@keyframes fade-in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes left-in
+{
+    0%
+    {
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0px);
+        opacity: 1;
+    }
+} 
+
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #222;
+	background-color: rgb(56, 55, 55);
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: rgb(56, 55, 55);
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #222;
+	border: 2px solid #222;
+}
+
+
+@media(max-width: 991px)
+{
+    .menuicon
+    {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        filter: invert(1);
+        background-size: 30px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+
+    .menuicon.active
+    {
+        background: url(close.png);
+        filter: invert(1);
+        background-size: 30px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+
+    .nav
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.95);
+        flex-direction: column;
+        z-index: 11;
+        border: none;
+        padding: 50px;
+    }
+
+    
+
+    .nav.active
+    {
+        left: 0;
+
+    }
+
+    .nav li 
+    {
+        margin: 5px 0;
+    }
+
+    .nav2
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.95);
+        flex-direction: column;
+        z-index: 11;
+        border: none;
+        padding: 50px;
+    }
+
+    
+
+    .nav2.active
+    {
+        left: 0;
+
+    }
+
+    .nav2 li 
+    {
+        margin: 5px 0;
+    }
+
+
+    .nav3
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.95);
+        flex-direction: column;
+        z-index: 11;
+        border: none;
+        padding: 50px;
+    }
+
+    
+
+    .nav3.active
+    {
+        left: 0;
+    }
+
+    .nav3 li 
+    {
+        margin: 5px 0;
+    }
+
+    section 
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    section:before
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 26%);
+    }
+
+    section .content
+    {
+        padding: 50px;
+        margin-bottom: 30px;
+    }
+    
+    section .content h2
+    {
+        font-size: 1.5em;
+    }
+
+    
+    section .content p 
+    {
+        font-size: 1em;
+    }
+
+    
+    section .content a 
+    {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+    section .imgBx
+    {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        margin-top: 40px;
+        margin-right: 139px;
+    }
+
+    .sci 
+    {
+        left: 50px;
+        bottom: 60px;
+    }
+
+
+        
+    section .imgBx img 
+    {
+        max-width: 300px;
+    }
+
+    section .imgBx .link 
+    {
+        max-width: 30px;
+        float: left;
+    }
+
+    section .imgBx .link2
+    {
+        max-width: 40px;
+        margin-top: 10px;
+        float: right;
+        margin-right: -356px;
+    }
+
+    section .imgBx #nippon
+    {
+        text-align: center;
+        font-size: .9em;
+        margin-top: 390px;
+        margin-left: -248px;
+    }
+
+    section .imgBx a:nth-child(1)
+    {
+        margin-bottom: 380px;
+    }
+
+    section .imgBx a:nth-child(2)
+    {
+        margin-bottom: 380px;
+    }
+}
+
